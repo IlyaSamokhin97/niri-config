@@ -1,0 +1,5 @@
+binds {
+    Mod+Alt+Space repeat=false hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Mod+S repeat=false hotkey-overlay-title="Open settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
+    Mod+P { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
+}

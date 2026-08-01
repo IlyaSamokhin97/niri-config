@@ -1,0 +1,22 @@
+binds {
+    Mod+Alt+Space repeat=false hotkey-overlay-title="Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+S repeat=false hotkey-overlay-title="Open settings" { spawn "noctalia" "msg" "settings-toggle"; }
+    Mod+P { spawn "noctalia" "msg" "panel-toggle" "session"; }
+    Mod+E { spawn "noctalia" "msg" "panel-toggle" "launcher" "/win "; }
+
+    XF86MonBrightnessUp allow-when-locked=true { spawn "noctalia" "msg" "brightness-up" "10%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "noctalia" "msg" "brightness-down" "10%"; }
+}
+
+// Floating Noctalia settings window.
+window-rule {
+  match app-id="dev.noctalia.Noctalia"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
+}
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
