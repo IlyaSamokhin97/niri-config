@@ -241,17 +241,6 @@ workspace "1" {}
 workspace "2" {}
 workspace "3" {}
 
-debug {
-  // Allows notification actions and window activation from Noctalia.
-  honor-xdg-activation-with-invalid-serial
-}
-
-// Set the overview wallpaper on the backdrop.
-layer-rule {
-  match namespace="^noctalia-overview*"
-  place-within-backdrop true
-}
-
 window-rule {
     match app-id="firefox"
     open-maximized true
@@ -276,11 +265,6 @@ window-rule {
 window-rule {
     match app-id="steam" title="Steam"
     open-maximized-to-edges true
-}
-
-window-rule {
-    match app-id="MEGAsync" title="MEGAsync"
-    open-floating true
 }
 
 // Example: block out two password managers from screen capture.
