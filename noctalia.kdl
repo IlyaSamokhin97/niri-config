@@ -4,8 +4,10 @@ binds {
     Mod+P { spawn "noctalia" "msg" "panel-toggle" "session"; }
     Mod+E { spawn "noctalia" "msg" "panel-toggle" "launcher" "/win "; }
 
-    XF86MonBrightnessUp allow-when-locked=true { spawn "noctalia" "msg" "brightness-up" "10%"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "noctalia" "msg" "brightness-down" "10%"; }
+    XF86MonBrightnessUp         allow-when-locked=true { spawn "noctalia" "msg" "brightness-up"   "10%"; }
+    XF86MonBrightnessDown       allow-when-locked=true { spawn "noctalia" "msg" "brightness-down" "10%"; }
+    Shift+XF86MonBrightnessUp   allow-when-locked=true { spawn "noctalia" "msg" "brightness-up"   "1%"; }
+    Shift+XF86MonBrightnessDown allow-when-locked=true { spawn "noctalia" "msg" "brightness-down" "1%"; }
 }
 
 // Floating Noctalia settings window.
