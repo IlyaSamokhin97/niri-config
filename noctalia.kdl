@@ -10,6 +10,10 @@ binds {
     Shift+XF86MonBrightnessDown allow-when-locked=true { spawn "noctalia" "msg" "brightness-down" "1%"; }
 }
 
+switch-events {
+    lid-close { spawn "noctalia" "msg" "session" "lock-and-suspend"; }
+}
+
 // Floating Noctalia settings window.
 window-rule {
     match app-id="dev.noctalia.Noctalia"
