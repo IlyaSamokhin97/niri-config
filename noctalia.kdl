@@ -12,6 +12,9 @@ binds {
 
 switch-events {
     lid-close { spawn "noctalia" "msg" "session" "lock-and-suspend"; }
+
+    // Select default keyboard layout (us) for entering the password.
+    lid-open { spawn "niri" "msg" "action" "switch-layout" "0"; }
 }
 
 // Floating Noctalia settings window.
