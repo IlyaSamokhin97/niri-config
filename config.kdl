@@ -280,4 +280,4 @@ window-rule {
 }
 
 include "binds.kdl"
-include "noctalia.kdl"
+include "noctalia-v5.kdl"

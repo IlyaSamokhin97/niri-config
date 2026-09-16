@@ -8,6 +8,8 @@ binds {
     XF86MonBrightnessDown       allow-when-locked=true { spawn "noctalia" "msg" "brightness-down" "10%"; }
     Shift+XF86MonBrightnessUp   allow-when-locked=true { spawn "noctalia" "msg" "brightness-up"   "1%"; }
     Shift+XF86MonBrightnessDown allow-when-locked=true { spawn "noctalia" "msg" "brightness-down" "1%"; }
+
+    Mod+Period { spawn "noctalia" "msg" "panel-toggle" "liamwh/emoji-picker:desktop"; }
 }
 
 switch-events {
