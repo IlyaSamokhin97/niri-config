@@ -22,7 +22,7 @@ input {
             // from org.freedesktop.locale1. You can control these using
             // localectl set-x11-keymap.
 
-            layout "us,ru"
+            layout "us(altgr-intl),ru"
             options "grp:alt_shift_toggle"
         }
 
