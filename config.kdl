@@ -242,10 +242,19 @@ workspace "1" {}
 workspace "2" {}
 workspace "3" {}
 
+// Open main Firefox window maximized
 window-rule {
-    match app-id="firefox"
+    match app-id=r#"firefox$"# 
+    exclude title="^Extension"
     open-maximized true
     open-on-workspace "1"
+}
+
+// Open other Firefox windows (e.g. Bitwarden extension) with the third of the full width
+window-rule {
+    match app-id=r#"firefox$"# 
+    open-maximized false
+    default-column-width { proportion 0.33333; }
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
