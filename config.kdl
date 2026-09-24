@@ -23,11 +23,8 @@ input {
             // localectl set-x11-keymap.
 
             layout "us(altgr-intl),ru"
-            options "grp:alt_shift_toggle"
+            options "grp:alt_caps_toggle"
         }
-
-        // Enable numlock on startup, omitting this setting disables it.
-        numlock
     }
 
     // Next sections include libinput settings.
