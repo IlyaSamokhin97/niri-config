@@ -266,6 +266,12 @@ window-rule {
 window-rule {
     match app-id="obsidian"
     open-maximized true
+    open-on-workspace "2"
+}
+
+window-rule {
+    match app-id=r#"Thunderbird$"#
+    open-maximized true
     open-on-workspace "3"
 }
 
