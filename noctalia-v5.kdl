@@ -1,5 +1,5 @@
 binds {
-    Mod+Alt+Space repeat=false hotkey-overlay-title="Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Alt+Space repeat=false hotkey-overlay-title="Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+S repeat=false hotkey-overlay-title="Open settings" { spawn "noctalia" "msg" "settings-toggle"; }
     Mod+P { spawn "noctalia" "msg" "panel-toggle" "session"; }
     Mod+E { spawn "noctalia" "msg" "panel-toggle" "launcher" "/win "; }
